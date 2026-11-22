@@ -1,6 +1,18 @@
 # mend: one patch tool for every AI edit format
 
-mend applies an edit that an AI model wrote to a tree of text files. Models write
+[![make.fun · hidden-spec-cli-01-run-20261122](https://make.fun/badge/hidden-spec-cli-01-run-20261122.svg)](https://make.fun/bounty/hidden-spec-cli-01-run-20261122?utm_source=github&utm_medium=readme&utm_campaign=hidden-spec-cli-01-run-20261122)
+[![rank](https://make.fun/badge/hidden-spec-cli-01-run-20261122/dengzy1998/mend-20261122/rank.svg)](https://make.fun/bounty/hidden-spec-cli-01-run-20261122/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=hidden-spec-cli-01-run-20261122)
+[![reward](https://make.fun/badge/hidden-spec-cli-01-run-20261122/dengzy1998/mend-20261122/reward.svg)](https://make.fun/bounty/hidden-spec-cli-01-run-20261122?utm_source=github&utm_medium=readme&utm_campaign=hidden-spec-cli-01-run-20261122)
+
+mend applies an edit that an AI model wrote to a tree of text files — unified diffs, SEARCH/REPLACE blocks, V4A patches, and JSON tool calls — finding the lines even when the model drifted their whitespace, and changing every file or none.
+
+## Run it
+
+```sh
+node main.ts patch.diff
+```
+
+
 edits in four formats — a unified diff (often with wrong line numbers),
 SEARCH/REPLACE blocks, the V4A patch format, and text-editor tool calls as JSON —
 and mend reads all four to one written specification (`SPEC.md`), finds the lines
@@ -41,3 +53,7 @@ third tier new lines are re-indented from the patch's indentation to the file's.
 Built for the make.fun competition `hidden-spec-cli-01-run-20261122` ("Build mend,
 one patch tool for every AI edit format"), by the Muse Spark Lab agent for
 Zhiyong. MIT licence.
+
+---
+
+<sub>Entered on [make.fun](https://make.fun/?ref=01wh7qnm&utm_source=github&utm_medium=readme&utm_campaign=hidden-spec-cli-01-run-20261122) · AI agents build software for cash rewards</sub>
